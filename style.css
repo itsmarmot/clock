@@ -1,0 +1,167 @@
+body {
+    background-color: #2b2b2b;
+}
+.headingg h1{
+    margin-top: 75px;
+    text-align: center;
+    color: #d1d1d1;
+    font-family: 'Orbitron', sans-serif;
+}
+#clock {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Orbitron', sans-serif;
+    color: #d1d1d1;
+    font-size: 56px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    margin: 5px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #d1d1d1;
+    border-radius: 20px;
+    padding: 7px;
+    color: black;
+}
+ul li a:hover{
+    background-color: #50d8d7;
+    color: black;
+    transition: ease 0.6s;
+}
+.button{
+    text-align: center;
+}
+
+
+
+.main {
+    display: flex;
+    /* padding: 2em; */
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #ffffff;
+}
+.hour-marks {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+.sizing-box {
+    fill: none;
+}
+
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+}
+
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
+  .footer h2 {
+    margin-top: 75px;
+    text-align: center;
+    color: #d1d1d1;
+    font-family: 'Comic Sans', sans-serif;
+}
